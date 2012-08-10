@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
+	</head>
+	<body>
+		<p>Hi {{user}}!</p>
+		<form method="post">
+				<div>{{url}}</div>
+			<label>
+				<div>Wiki Form</div>
+				<textarea name="content">{{saved_text}}</textarea>
+			</label>
+			<div class="error">{{error}}</div>
+			<input type ="submit" value="Save Wiki">
+			</form>
+	</body>
+</html>

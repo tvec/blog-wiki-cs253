@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+	</head>
+	<body>
+		
+		<form method="post">
+			<div
+			<label>Username
+				<input name = "username" type= "text"  value= "{{uname}}"></input><div style="color: red">{{uname_err}}</div>		
+			</label>
+			<label>Password
+				<input name = "password" type= "password"></input><div style="color: red">{{pw_err}}</div>
+			</label>
+			<label>Verify Password
+				<input name = "verify" type="password"></input><div style="color: red">{{vpw_err}}</div>
+			</label>	
+			<label>Email (optional)
+				<input name = "email" type= "email" value= "{{email}}"></input><div style="color: red">{{email_err}}</div>
+			</label>
+			</br>
+			<input type = "submit">
+		</form>
+		
+	</body>
+</html>

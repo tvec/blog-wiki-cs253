@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
+	</head>
+	<body>
+	{% if img_url %}
+		<img class = "map" src = "{{img_url}}">
+	{% endif %}
+	<a href="/newpost" >New Blog Entry</a>
+	
+	{% for blog in blogs %}
+	<hr>
+	<div class="art">
+		<div class="blog-title">{{blog.title}}</div>
+		<pre class="blog-body">{{blog.blog}}</pre>
+		<a href="/blog/{{blog.key().id()}}" ><div class="blog-date">{{blog.created}}</div></a>
+	
+		
+	</div>
+	{% endfor %}
+	<p>queried {{querytime}} seconds ago</p>
+	</body>
+</html>

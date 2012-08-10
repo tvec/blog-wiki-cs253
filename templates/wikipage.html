@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
+	</head>
+	<body>
+		{% if user %}		
+		<a href ="/_edit{{url}}" >Edit</a> <a href ="/logout{{url}}" >Logout</a>
+		{% else %}
+		<a href ="/login{{url}}" >Login</a>
+		{% endif %}
+		{{wiki_page}}
+	</body>
+</html>
